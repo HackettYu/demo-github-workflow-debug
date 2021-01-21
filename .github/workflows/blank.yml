@@ -34,3 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Test
+      - name: Use group
+        run: |
+          echo "::group::My title"
+          echo "Inside group“
+          echo "::endgroup::"
