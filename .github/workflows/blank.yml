@@ -39,5 +39,16 @@ jobs:
       - name: Use group
         run: |
           echo "::group::My title"
-          echo "Inside group“
+          echo "Inside group"
           echo "::endgroup::"
+
+          echo "::debug::Set the Octocat variable"
+
+          echo "::workflow-command parameter1={data},parameter2={data}::{command value}"
+
+          echo "::add-mask::Mona The Octocat"
+
+          TEST_MASK="Mona The Octocat"
+          echo "::add-mask::$TEST_MASK"
+
+
